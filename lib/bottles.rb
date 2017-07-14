@@ -3,9 +3,9 @@ module Bottles
 
   def verse(number)
     <<~END_VERSE.strip
-			#{pluralize(number).capitalize} of beer on the wall, #{pluralize(number)} of beer.
-			#{second_line(number)}
-		END_VERSE
+      #{pluralize(number).capitalize} of beer on the wall, #{pluralize(number)} of beer.
+      #{second_line(number)}
+    END_VERSE
   end
 
   def verses(from_number, to_number)
@@ -14,9 +14,9 @@ module Bottles
       .join("\n\n")
   end
 
-	def song
-		verses(99, 0)
-	end
+  def song
+    verses(99, 0)
+  end
 
   def second_line(number)
     if number == 0
